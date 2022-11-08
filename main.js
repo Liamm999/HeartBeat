@@ -6,15 +6,15 @@
 
 var settings = {
   particles: {
-    length: 5000, // maximum amount of particles
+    length: 4500, // maximum amount of particles
 
     duration: 2, // particle duration in sec
 
-    velocity: 100, // particle velocity in pixels/sec
+    velocity: 110, // particle velocity in pixels/sec
 
-    effect: -0.5, // play with this for a nice effect
+    effect: -0.7, // play with this for a nice effect
 
-    size: 10, // particle size in pixels
+    size: 15, // particle size in pixels
   },
 };
 
@@ -70,9 +70,9 @@ var Point = (function () {
 
     this.normalize();
 
-    this.x *= length;
+    this.x *= length + 150;
 
-    this.y *= length;
+    this.y *= length + 150;
 
     return this;
   };
